@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0a0e12">
+<title>RBLX Insights — Roblox Game Analytics</title>
+<style>
+:root{color-scheme:dark;--bg:#0a0e12;--panel:#111820;--panel2:#17212b;--line:#283541;--muted:#8e9dab;--text:#f2f6f8;--green:#a0ffb4;--green2:#4cbd76}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#183025 0,transparent 42%),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);min-height:100vh}button,input{font:inherit}button{cursor:pointer}.app{max-width:1180px;margin:auto;padding:20px 22px 100px}.top{display:flex;align-items:center;gap:12px;padding:8px 0 24px}.logo{width:44px;height:44px;display:grid;place-items:center;border-radius:14px;background:var(--green);color:#08120b;font-size:22px;font-weight:900}.brand{font-weight:850;letter-spacing:.03em}.brand span{color:var(--green)}.sub{font-size:10px;letter-spacing:.14em;color:var(--muted);margin-top:3px}.topright{margin-left:auto;color:var(--muted);font-size:12px}.hero{padding:30px 0 26px;max-width:780px}.eyebrow{color:var(--green);font-size:11px;letter-spacing:.16em;font-weight:800}.hero h1{font-size:clamp(34px,6vw,58px);letter-spacing:-.055em;line-height:1.04;margin:14px 0}.hero h1 em{font-style:normal;color:var(--green)}.hero p{color:#aab6c1;line-height:1.65;max-width:620px}.searchbox{display:flex;gap:10px;background:#121922;border:1px solid #33434f;padding:9px;border-radius:18px;max-width:780px;box-shadow:0 18px 60px #0003}.searchbox input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--text);padding:9px 10px}.primary{border:0;background:var(--green);color:#07120b;font-weight:800;border-radius:12px;padding:13px 18px}.primary:hover{filter:brightness(1.06)}.secondary{background:#202b35;color:#dce5eb;border:1px solid #33414d;border-radius:10px;padding:9px 12px}.note{font-size:12px;color:var(--muted);margin:10px 2px 0}.sectionhead{display:flex;align-items:center;gap:12px;margin:34px 0 14px}.sectionhead h2{font-size:17px;margin:0}.sectionhead small{margin-left:auto;color:var(--muted);font-size:10px;letter-spacing:.1em}.quickgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.quick{background:linear-gradient(140deg,#151e26,#10161d);border:1px solid var(--line);border-radius:18px;padding:18px}.quick .ico{width:40px;height:40px;display:grid;place-items:center;background:#20362a;border-radius:12px;color:var(--green);font-size:19px}.quick h3{font-size:15px;margin:15px 0 6px}.quick p{font-size:12px;line-height:1.55;color:var(--muted);margin:0}.results{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:18px}.gamecard{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:13px;display:flex;gap:13px;align-items:center;min-width:0}.gameicon{width:68px;height:68px;object-fit:cover;border-radius:13px;background:#26342d;flex-shrink:0}.gamecard h3{margin:0 0 5px;font-size:14px}.gamecard p{margin:0 0 8px;color:var(--muted);font-size:12px}.gamecard .primary{padding:8px 11px;font-size:12px}.muted{color:var(--muted)}.hidden{display:none!important}.status{margin-top:15px;color:var(--muted);font-size:13px}.error{color:#ffb0a5}.detailhead{display:flex;gap:15px;align-items:center;margin:24px 0}.detailhead .gameicon{width:90px;height:90px}.detailhead h1{font-size:clamp(24px,4vw,36px);margin:0 0 8px;letter-spacing:-.03em}.pill{display:inline-flex;border:1px solid #31513b;color:var(--green);background:#14231a;border-radius:100px;padding:5px 9px;font-size:10px;font-weight:800;letter-spacing:.08em}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{background:var(--panel);border:1px solid var(--line);border-radius:17px;padding:17px}.statlabel{color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.1em}.statvalue{font-size:clamp(22px,3vw,31px);font-weight:800;letter-spacing:-.04em;margin:12px 0 5px;overflow-wrap:anywhere}.statfoot{color:var(--green);font-size:11px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:19px;margin-top:14px}.panel h2{font-size:16px;margin:0 0 12px}.description{white-space:pre-wrap;color:#b1bdc8;line-height:1.65;font-size:13px}.meta{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.metaitem{padding:12px;background:#17212a;border-radius:12px}.metaitem label{display:block;color:var(--muted);font-size:10px;margin-bottom:6px}.metaitem strong{font-size:13px;overflow-wrap:anywhere}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.toolbar .spacer{flex:1}.empty{padding:26px 0;color:var(--muted)}.footer{border-top:1px solid #202b34;margin-top:40px;padding-top:17px;color:#778593;font-size:11px;line-height:1.6}.bottom{display:none}.loader{width:14px;height:14px;border:2px solid #284231;border-top-color:var(--green);border-radius:50%;display:inline-block;animation:spin .8s linear infinite;vertical-align:middle}@keyframes spin{to{transform:rotate(360deg)}}@media(max-width:700px){.app{padding:13px 14px 94px}.top{padding-bottom:12px}.topright{font-size:10px}.hero{padding:25px 0 20px}.searchbox{flex-direction:column}.searchbox .primary{width:100%}.quickgrid{grid-template-columns:1fr}.quick{display:flex;gap:13px;align-items:center;padding:14px}.quick .ico{flex-shrink:0}.quick h3{margin:0 0 4px}.results{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.stat{padding:13px}.statvalue{font-size:24px}.meta{grid-template-columns:1fr}.detailhead .gameicon{width:72px;height:72px}.bottom{display:flex;position:fixed;z-index:5;bottom:0;left:0;right:0;background:#0d1319ee;backdrop-filter:blur(18px);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));justify-content:space-around}.bottom button{background:transparent;border:0;color:var(--muted);font-size:11px;display:grid;gap:4px;justify-items:center}.bottom button b{font-size:19px;font-weight:500}.bottom button.active{color:var(--green)}}
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <div class="logo">↗</div><div><div class="brand">RBLX <span>INSIGHTS</span></div><div class="sub">ROBLOX GAME ANALYTICS</div></div>
+    <div class="topright">PUBLIC DATA · LIVE LOOKUP</div>
+  </header>
+
+  <main id="home">
+    <section class="hero"><div class="eyebrow">YOUR ROBLOX COMMAND CENTER</div><h1>Every game has a story.<br><em>Read the numbers.</em></h1><p>Search an experience to fetch its public Roblox stats, game details, votes, and player count. No demo numbers presented as real data.</p></section>
+    <form class="searchbox" id="searchForm"><input id="searchInput" autocomplete="off" placeholder="Search a game name or paste an experience ID…" aria-label="Search Roblox games"><button class="primary" id="searchButton">⌕ &nbsp; Search Roblox</button></form>
+    <div class="note">Search uses Roblox's public games API. Current availability depends on Roblox's service and rate limits.</div>
+    <div id="status" class="status" role="status"></div>
+    <section id="resultsSection" class="hidden"><div class="sectionhead"><h2>Search results</h2><small id="resultCount"></small></div><div id="results" class="results"></div></section>
+    <div id="welcome">
+      <div class="sectionhead"><h2>What you can inspect</h2><small>PUBLIC EXPERIENCE DATA</small></div>
+      <div class="quickgrid">
+        <article class="quick"><div class="ico">◉</div><div><h3>Player activity</h3><p>Current concurrent players and maximum server capacity when provided.</p></div></article>
+        <article class="quick"><div class="ico">↗</div><div><h3>Reach & engagement</h3><p>Total visits, favorites, and vote ratio when Roblox exposes them.</p></div></article>
+        <article class="quick"><div class="ico">✦</div><div><h3>Experience details</h3><p>Creator, genre, description, creation date, and last update.</p></div></article>
+      </div>
+    </div>
+  </main>
+
+  <main id="gameView" class="hidden">
+    <div class="toolbar"><button class="secondary" id="backButton">← Back to search</button><span class="spacer"></span><button class="secondary" id="refreshButton">↻ Refresh stats</button></div>
+    <div id="gameStatus" class="status"></div>
+    <section id="gameContent"></section>
+  </main>
+  <main id="savedView" class="hidden">
+    <div class="hero"><div class="eyebrow">YOUR COLLECTION</div><h1>Saved <em>experiences.</em></h1><p>Your watchlist is stored in this browser on this device.</p></div>
+    <div id="savedList"></div>
+  </main>
+  <footer class="footer">RBLX Insights is an independent concept and is not affiliated with Roblox Corporation. Public stats can be delayed, unavailable, or rate-limited. Private creator analytics (such as retention and revenue) require permission through Roblox's creator analytics APIs. This app does not fabricate missing values.</footer>
+</div>
+<nav class="bottom"><button class="active" data-view="home"><b>⌂</b>Home</button><button data-view="home" data-focus-search="true"><b>⌕</b>Search</button><button data-view="savedView"><b>♡</b>Saved</button></nav>
+<script>
+const $ = id => document.getElementById(id);
+let lastGameId = null;
+let lastQuery = "";
+let currentGame = null;
+const fmt = n => n == null ? "—" : new Intl.NumberFormat("en-US", {notation: n >= 1e6 ? "compact" : "standard", maximumFractionDigits: 1}).format(n);
+const dateFmt = s => { if(!s) return "—"; const d=new Date(s); return isNaN(d)? "—":d.toLocaleDateString(undefined,{year:"numeric",month:"short",day:"numeric"}); };
+function escapeHTML(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function setView(view){["home","gameView","savedView"].forEach(v=>$(v).classList.toggle("hidden",v!==view));document.querySelectorAll(".bottom button").forEach(b=>b.classList.toggle("active",b.dataset.view===view));}
+async function api(path){const r=await fetch(path);const j=await r.json();if(!r.ok)throw new Error(j.error||"Request failed");return j;}
+function status(msg,err=false){$("status").className="status"+(err?" error":"");$("status").textContent=msg;}
+function gameCard(g){const img=g.thumbnail||"";return `<article class="gamecard"><img class="gameicon" src="${escapeHTML(img)}" alt="" onerror="this.style.visibility='hidden'"><div style="min-width:0;flex:1"><h3>${escapeHTML(g.name)}</h3><p>${escapeHTML(g.creator||"Unknown creator")} · ${fmt(g.playing)} playing</p><button class="primary" data-game-id="${escapeHTML(g.universeId)}">View real stats →</button></div></article>`;}
+async function searchGames(q){
+  lastQuery=q;setView("home");$("welcome").classList.add("hidden");$("resultsSection").classList.remove("hidden");$("results").innerHTML="";$("resultCount").textContent="";status('<span class="loader"></span> Searching Roblox…');
+  try{
+    if(/^\d+$/.test(q)){await loadGame(q);return;}
+    const out=await api("/api/search?q="+encodeURIComponent(q));
+    const games=out.data||[];$("resultCount").textContent=games.length+" RESULTS";
+    if(!games.length){$("results").innerHTML='<div class="empty">No public results found. Try a different name or use the experience ID.</div>';status("Search completed.");return;}
+    $("results").innerHTML=games.map(gameCard).join("");
+    // Fetch icons in parallel from Roblox's thumbnail endpoint via the server-side thumbnail route.
+    for(const g of games){api("/api/thumbnail?id="+encodeURIComponent(g.universeId)).then(t=>{const card=[...document.querySelectorAll("[data-game-id]")].find(b=>b.dataset.gameId==g.universeId)?.closest(".gamecard");if(card&&t.url){const img=card.querySelector("img");img.src=t.url;img.style.visibility="visible";}}).catch(()=>{});}
+    status("Results fetched from Roblox public API. Select a game to see its details.");
+  }catch(e){status(e.message,true);}
+}
+async function loadGame(id){
+  lastGameId=String(id);setView("gameView");$("gameContent").innerHTML="";$("gameStatus").innerHTML='<span class="loader"></span> Fetching real Roblox stats…';
+  try{const g=await api("/api/game?id="+encodeURIComponent(id));currentGame=g;renderGame(g);$("gameStatus").textContent="Fetched from Roblox public APIs · "+new Date(g.fetchedAt).toLocaleTimeString();}
+  catch(e){$("gameStatus").className="status error";$("gameStatus").textContent=e.message;}
+}
+function renderGame(g){
+  const ratio=g.likeRatio==null?"—":g.likeRatio.toFixed(1)+"%";
+  const stats=[
+    ["CURRENT PLAYERS",fmt(g.playing),"Currently in the experience"],
+    ["TOTAL VISITS",fmt(g.visits),"All-time visits"],
+    ["FAVORITES",fmt(g.favoritedCount),"Public favorite count"],
+    ["LIKE RATIO",ratio,g.upVotes==null?"Vote data unavailable":`${fmt(g.upVotes)} up · ${fmt(g.downVotes)} down`],
+    ["SERVER CAPACITY",fmt(g.maxPlayers),"Maximum players per server"],
+    ["EXPERIENCE ID",fmt(g.universeId),"Roblox universe ID"]
+  ];
+  $("gameContent").innerHTML=`
+    <section class="detailhead">${g.thumbnail?`<img class="gameicon" src="${escapeHTML(g.thumbnail)}" alt="Game icon">`:`<div class="gameicon"></div>`}<div><span class="pill">REAL PUBLIC DATA</span><h1>${escapeHTML(g.name)}</h1><div class="muted" style="font-size:13px">${escapeHTML(g.creator)}${g.genre?" · "+escapeHTML(g.genre):""}</div></div></section>
+    <div class="stats">${stats.map(s=>`<article class="stat"><div class="statlabel">${s[0]}</div><div class="statvalue">${s[1]}</div><div class="statfoot">${s[2]}</div></article>`).join("")}</div>
+    <section class="panel"><h2>Experience details</h2><div class="meta"><div class="metaitem"><label>CREATED</label><strong>${dateFmt(g.created)}</strong></div><div class="metaitem"><label>LAST UPDATED</label><strong>${dateFmt(g.updated)}</strong></div><div class="metaitem"><label>PLACE ID</label><strong>${g.placeId??"—"}</strong></div><div class="metaitem"><label>CREATOR TYPE</label><strong>${escapeHTML(g.creatorType||"—")}</strong></div></div><h2 style="margin-top:18px">Description</h2><div class="description">${escapeHTML(g.description||"No public description available.")}</div></section>
+    <section class="panel"><div class="toolbar"><h2 style="margin:0">Watchlist</h2><span class="spacer"></span><button class="primary" id="saveGame">${isSaved(g.universeId)?"✓ Saved":"＋ Save experience"}</button><a class="secondary" style="text-decoration:none" href="https://www.roblox.com/games/${encodeURIComponent(g.placeId||g.universeId)}" target="_blank" rel="noopener">Open on Roblox ↗</a></div></section>
+    <section class="panel"><h2>About these numbers</h2><p class="description">These values were fetched from Roblox's public APIs. A dash means Roblox did not return that field. Current players are a point-in-time snapshot, not a historical graph. Public APIs do not provide full retention, revenue, or private creator dashboard analytics for arbitrary games.</p></section>`;
+  $("saveGame").onclick=()=>{toggleSaved(g);$("saveGame").textContent=isSaved(g.universeId)?"✓ Saved":"＋ Save experience";};
+}
+function getSaved(){try{return JSON.parse(localStorage.getItem("rblxInsightsSaved")||"[]")}catch{return []}}
+function isSaved(id){return getSaved().some(g=>String(g.universeId)===String(id))}
+function toggleSaved(g){let s=getSaved();s=isSaved(g.universeId)?s.filter(x=>String(x.universeId)!==String(g.universeId)):[g,...s];localStorage.setItem("rblxInsightsSaved",JSON.stringify(s));}
+function showSaved(){setView("savedView");const s=getSaved();$("savedList").innerHTML=s.length?s.map(g=>`<article class="gamecard" style="margin-bottom:10px"><img class="gameicon" src="${escapeHTML(g.thumbnail||"")}" alt="" onerror="this.style.visibility='hidden'"><div style="flex:1;min-width:0"><h3>${escapeHTML(g.name)}</h3><p>${fmt(g.playing)} playing · ${fmt(g.visits)} visits</p><button class="primary" data-open-saved="${escapeHTML(g.universeId)}">Open stats</button> <button class="secondary" data-remove-saved="${escapeHTML(g.universeId)}">Remove</button></div></article>`).join(""):'<div class="empty">No saved games yet. Search an experience and save it from its stats page.</div>';}
+$("searchForm").addEventListener("submit",e=>{e.preventDefault();const q=$("searchInput").value.trim();if(!q){status("Type a game name or experience ID first.",true);return;}searchGames(q);});
+$("results").addEventListener("click",e=>{const b=e.target.closest("[data-game-id]");if(b)loadGame(b.dataset.gameId);});
+$("savedList").addEventListener("click",e=>{const b=e.target.closest("[data-open-saved],[data-remove-saved]");if(!b)return;if(b.dataset.openSaved)loadGame(b.dataset.openSaved);else{localStorage.setItem("rblxInsightsSaved",JSON.stringify(getSaved().filter(g=>String(g.universeId)!==b.dataset.removeSaved)));showSaved();}});
+$("backButton").onclick=()=>{setView("home");if(lastQuery){$("searchInput").value=lastQuery;$("welcome").classList.add("hidden");$("resultsSection").classList.remove("hidden");}};
+$("refreshButton").onclick=()=>lastGameId&&loadGame(lastGameId);
+document.querySelectorAll(".bottom button").forEach(b=>b.onclick=()=>{if(b.dataset.view==="savedView")showSaved();else{setView("home");if(b.dataset.focusSearch)$("searchInput").focus();}});
+</script>
+</body>
+</html>
