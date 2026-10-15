@@ -1,0 +1,12 @@
+{
+  "name": "rblx-insights",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Responsive Roblox public experience stats viewer",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
